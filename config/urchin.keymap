@@ -9,15 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-// Layer definitions
-
-#define BASE 0
-#define NUMNAV 1
-#define SYMBOL 2
-#define SETTINGS 3
-
-// -----------------
-
 &sk {
     // don't release mods on other mods presses
 
@@ -44,7 +35,7 @@
         // Numbers and navigation keys
 
         numnav_layer {
-            label = "Sym.";
+            label = "Numnav";
             bindings = <
        &kp N1                &kp N2            &kp N3               &kp N4                &kp N5              &kp N6                    &kp N7                    &kp N8              &kp N9                 &kp N0
   &kp IT_LESS          &kp KP_MINUS            &kp UP          &kp KP_PLUS          &kp KP_EQUAL           &kp ENTER          &kp LEFT_COMMAND              &kp LEFT_ALT             &kp TAB          &kp BACKSPACE
@@ -56,7 +47,7 @@
         // Symbols organized by frequency
 
         symbol_layer {
-            label = "Sym.2";
+            label = "Symbol";
             bindings = <
  &kp EXCLAMATION                &kp AT                &kp HASH                &kp PERCENT          &kp PERCENT                &kp EXCL              &kp LEFT_BRACKET              &kp RIGHT_BRACKET              &kp CARET          &kp TILDE
       &kp ESCAPE             &kp GRAVE          &kp APOSTROPHE          &kp DOUBLE_QUOTES           &kp IT_AND            &kp KP_MINUS          &kp LEFT_PARENTHESIS          &kp RIGHT_PARENTHESIS          &kp AMPERSAND           &kp PIPE
@@ -68,7 +59,7 @@
         // Used to change the keyboard's settings
 
         settings_layer {
-            label = "Sett.";
+            label = "Sett";
             bindings = <
  &bootloader           &none           &none          &bt BT_CLR          &bt BT_SEL 0          &bt BT_SEL 3           &none          &unstick           &none          &bootloader
        &none           &none           &none               &none          &bt BT_SEL 1          &bt BT_SEL 4           &none             &none           &none                &none
