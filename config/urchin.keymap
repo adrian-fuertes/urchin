@@ -34,7 +34,7 @@
 						label = "Default";
 						bindings = <
 						&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P
-						&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L &kp SEMICOLON
+						&kp A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_GUI F &kp G           &kp H  &mt LEFT_GUI J &mt LEFT_ALT K &mt LEFT_CONTROL L &kp SEMICOLON
 						&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp SLASH
 										&kp SPACE &kp LSHIFT           &mo EXT &mo SYM
 						>;
