@@ -26,39 +26,6 @@
 };
 
 / {
-		macros {
-				// sometimes my device thinks a modifier is being held down
-				// pressing all modifiers fixes it.
-				unstick: unstick {
-					label = "ZM_unstick";
-					compatible = "zmk,behavior-macro";
-					#binding-cells = <0>;
-					bindings = <&kp LSHIFT &kp RSHIFT &kp LCTRL &kp RCTRL &kp LALT &kp RALT &kp LGUI &kp RGUI>;
-				};
-		};
-
-    combos {
-        compatible = "zmk,combos";
-				// both right thumb keys
-        combo_accent {
-            timeout-ms = <300>;
-            key-positions = <32 33>;
-            bindings = <&mo ACCENT>;
-        };
-				// internal-left & external-right thumb keys
-				combo_sym2 {
-						timeout-ms = <200>;
-						key-positions = <31 33>;
-						bindings = <&mo SYM2>;
-				};
-				// both left thumb keys
-				combo_settings {
-						timeout-ms = <300>;
-						key-positions = <30 31>;
-						bindings = <&mo SETTINGS>;
-				};
-    };
-
     keymap {
 				compatible = "zmk,keymap";
 
@@ -132,7 +99,7 @@
 				settings_layer {
 						label = "Settings";
 						bindings = <
-						&bootloader &none &none &bt BT_CLR &bt BT_SEL 0               &bt BT_SEL 3 &none &unstick &none &bootloader
+						&bootloader &none &none &bt BT_CLR &bt BT_SEL 0               &bt BT_SEL 3 &none &none &none &bootloader
 						&none &none &none &none      &bt BT_SEL 1 						  &bt BT_SEL 4 &none &none &none &none
 						&none &none &none &none      &bt BT_SEL 2               &bt BT_SEL 5 &none &none &none &none
 															&none &none                         &none &none
