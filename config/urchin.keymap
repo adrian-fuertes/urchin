@@ -61,8 +61,8 @@
 						label = "Symbols";
 						bindings = <
 						&kp EXCLAMATION &kp AT &kp HASH  &kp DOLLAR  &kp PERCENT    			        &kp EXCL  &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp CARET &kp TILDE
-						&kp ESCAPE &kp GRAVE  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp PLUS 			&kp MINUS &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND   &kp PIPE
-						&kp TAB  &kp LEFT_GUI &kp ASTERISK &kp KP_EQUAL  &kp MINUS          &kp UNDERSCORE &kp LEFT_BRACE &kp RIGHT_BRACE &kp BACKSLASH  &none
+						&kp ESCAPE &kp GRAVE  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &mt LG(PLUS) PLUS 			&kp MINUS &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND   &kp PIPE
+						&kp TAB  &kp LEFT_GUI &kp ASTERISK &kp KP_EQUAL  &mt LG(MINUS) MINUS       &kp UNDERSCORE &kp LEFT_BRACE &kp RIGHT_BRACE &kp BACKSLASH  &none
 																					&trans &mo SETTINGS    &trans  &trans
 						>;
 				};
