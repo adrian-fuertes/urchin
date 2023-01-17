@@ -14,10 +14,7 @@
     #define BASE 0
     #define SYM 1
     #define EXT 2
-    #define FNC 3
-    #define SYM2 4
-    #define ACCENT 5
-	#define SETTINGS 6
+	#define SETTINGS 3
 // -----------------
 
 &sk {
@@ -59,39 +56,6 @@
 						&kp ESCAPE &kp GRAVE  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp PLUS 			&kp MINUS &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND   &kp PIPE
 						&kp TAB  &kp LEFT_GUI &kp ASTERISK &kp KP_EQUAL   &kp MINUS          &kp UNDERSCORE &kp LEFT_BRACE &kp RIGHT_BRACE &kp BACKSLASH  &none
 																					&trans &mo SETTINGS    &trans  &trans
-						>;
-				};
-
-        // Function keys with modifiers
-				fnc_layer {
-						label = "Function";
-						bindings = <
-						&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
-						&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
-						&none &none &none &none &none				          &none &none &none &none &none
-																		&none &none              &none &none
-						>;
-				};
-
-        // Low frequency symbols.
-				symbols_2_layer {
-						label = "Symbols2";
-						bindings = <
-						&kp IT_CARET &kp IT_UNDER &kp IT_PND &kp IT_EUR &kp IT_HASH         &none &none &none &none &none
-						&kp IT_BKTK &kp IT_TILDE &kp IT_BSLH &kp IT_PIPE &kp IT_AND         &none &none &none &none &none
-						&none 			&none 			 &kp IT_SECT &kp IT_CCED &kp IT_DEG				  &none &none &none &none &none
-																														&none &none        	&none &none
-						>;
-				};
-
-        // Used to type regional accents.
-				accent_layer {
-						label = "Accents";
-						bindings = <
-						&none &none &none &kp IT_CEGR &none                         &none &none &none &none &none
-						&kp IT_AGRV &kp IT_IGRV &kp IT_OGRV &kp IT_EGRV &kp IT_EACU &none &none &none &none &none
-						&none &none &none &kp IT_UGRV &none                         &none &none &none &none &none
-															&none &none                         &none &none
 						>;
 				};
 
