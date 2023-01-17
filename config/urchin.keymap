@@ -8,17 +8,16 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "keymap_italian.h"
 
 // Layer definitions
     #define BASE 0
-    #define SYM 1
-    #define EXT 2
+    #define NUMNAV 1
+    #define SYMBOL 2
 	#define SETTINGS 3
 // -----------------
 
 &sk {
-		// don't release mods on other mods presses
+	// don't release mods on other mods presses
     ignore-modifiers;
 };
 
@@ -33,13 +32,13 @@
 						&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P
 						&mt LC(LS(LA(LGUI))) A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_GUI F &kp G           &kp H  &mt LEFT_GUI J &mt LEFT_ALT K &mt LEFT_CONTROL L 	&mt LC(LS(LA(LGUI))) SEMICOLON
 						&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp SLASH
-										&mt LC(LS(LALT)) SPACE &kp LSHIFT           &mo EXT &mo SYM
+										&mt LC(LS(LALT)) SPACE &kp LSHIFT           &mo SYMBOL &mo NUMNAV
 						>;
 				};
 
-        // Numbers and high frequency symbols
+        // Numbers and arrow key navigation
 				sym_layer {
-						label = "Symbols";
+						label = "Numnav";
 						bindings = <
 						&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
 						&kp C_VOLUME_UP &kp KP_MINUS &kp UP &kp KP_PLUS &kp KP_EQUAL  &kp ENTER &kp LEFT_GUI &kp LEFT_ALT &kp TAB &kp BACKSPACE
@@ -48,9 +47,9 @@
 						>;
 				};
 
-        // Main modifiers and arrow keys
+        // Symbols organized by use
 		    ext_layer {
-						label = "Extend";
+						label = "Symbols";
 						bindings = <
 						&kp EXCLAMATION &kp AT &kp HASH  &kp DOLLAR  &kp PERCENT    			        &kp EXCL  &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp CARET &kp TILDE
 						&kp ESCAPE &kp GRAVE  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp PLUS 			&kp MINUS &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND   &kp PIPE
@@ -59,7 +58,7 @@
 						>;
 				};
 
-        // Used to change the keyboard's settings.
+        // Used to change the keyboard's settings
 				settings_layer {
 						label = "Settings";
 						bindings = <
