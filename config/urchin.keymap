@@ -40,7 +40,7 @@
 						bindings = <
 						&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P
 						&mt LC(LS(LA(LGUI))) A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_GUI F &kp G           &kp H  &mt LEFT_GUI J &mt LEFT_ALT K &mt LEFT_CONTROL L 	&mt LC(LS(LA(LGUI))) SEMICOLON
-						&kp Z &kp X &kp C &kp V &lt ONEHAND B           &lt ONEHAND N  &kp M  &kp COMMA &kp DOT &kp SLASH
+						&mt C_AC_UNDO Z &mt C_AC_CUT X &mt C_AC_COPY C &mt C_AC_PASTE V &lt ONEHAND B           &lt ONEHAND N  &kp M  &kp COMMA &kp DOT &kp SLASH
 										&mt LC(LS(LALT)) SPACE &kp LSHIFT           &mo SYMBOL &mo NUMNAV
 						>;
 				};
@@ -61,8 +61,8 @@
 						label = "Symbols";
 						bindings = <
 						&kp EXCLAMATION &kp AT &kp HASH  &kp DOLLAR  &kp PERCENT    			        &kp EXCL  &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp CARET &kp TILDE
-						&kp ESCAPE &kp GRAVE  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp PLUS 			&kp MINUS &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND   &kp PIPE
-						&kp TAB  &kp LEFT_GUI &kp ASTERISK &kp KP_EQUAL   &kp MINUS          &kp UNDERSCORE &kp LEFT_BRACE &kp RIGHT_BRACE &kp BACKSLASH  &none
+						&kp ESCAPE &kp GRAVE  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &mt LGUI(PLUS) PLUS 			&kp MINUS &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND   &kp PIPE
+						&kp TAB  &kp LEFT_GUI &kp ASTERISK &kp KP_EQUAL  &mt LGUI(MINUS) MINUS          &kp UNDERSCORE &kp LEFT_BRACE &kp RIGHT_BRACE &kp BACKSLASH  &none
 																					&trans &mo SETTINGS    &trans  &trans
 						>;
 				};
