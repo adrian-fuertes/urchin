@@ -18,6 +18,13 @@
 
 // -----------------
 
+&mt {
+    flavor = "tap-preferred";
+    tapping_term_ms = <210>;
+    quick_tap_ms = <0>;
+};
+
+
 &sk {
 	// don't release mods on other mods presses
     ignore-modifiers;
@@ -28,8 +35,8 @@
 				compatible = "zmk,keymap";
 
         // Base alpha layer
-				default_layer {
-						label = "Default";
+				base_layer {
+						label = "Base";
 						bindings = <
 						&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P
 						&mt LC(LS(LA(LGUI))) A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_GUI F &kp G           &kp H  &mt LEFT_GUI J &mt LEFT_ALT K &mt LEFT_CONTROL L 	&mt LC(LS(LA(LGUI))) SEMICOLON
@@ -39,7 +46,7 @@
 				};
 
         // Numbers and arrow key navigation
-				sym_layer {
+				numnav_layer {
 						label = "Numnav";
 						bindings = <
 						&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
@@ -50,7 +57,7 @@
 				};
 
         // Symbols organized by use
-		    ext_layer {
+		    sym_layer {
 						label = "Symbols";
 						bindings = <
 						&kp EXCLAMATION &kp AT &kp HASH  &kp DOLLAR  &kp PERCENT    			        &kp EXCL  &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp CARET &kp TILDE
