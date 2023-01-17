@@ -20,8 +20,9 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping_term_ms = <200>;
+    tapping_term_ms = <210>;
     quick_tap_ms = <0>;
+	retro-tap;
 };
 
 / {
@@ -72,7 +73,7 @@
 						>;
 				};
 
-        // Cntrold for one-handed use
+        // Controls for one-handed use
 				onehanded_layer {
 						label = "One-handed";
 						bindings = <
